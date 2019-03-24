@@ -3,7 +3,7 @@ sudo: required
 services:
       - docker
 before_install:
-    - docker pull golang:1.9.2
+    - docker pull golang:ARM
 
 script:
     - make docker
