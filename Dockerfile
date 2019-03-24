@@ -1,6 +1,6 @@
-FROM golang:ARM as build
+FROM arm32v7/golang:latest as build
 
-LABEL maintainer alexellis2@gmail.com
+LABEL maintainer sridharangopal@gmail.com
 
 RUN mkdir -p /go/src/github.com/sridharangopal/jaas
 WORKDIR /go/src/github.com/sridharangopal/jaas
